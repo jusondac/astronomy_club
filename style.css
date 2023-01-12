@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main {
+  background: url("/assets/main-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.main::before {
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  background: linear-gradient(to bottom, rgba(105, 69, 69, 0) 80%, black 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .nav-section {
+  width: 50%;
+  color: white;
+  font-family: "Caudex", serif;
+  display: flex;
+  letter-spacing: -1px;
+  font-size: 13px;
+  padding: 50px 50px;
+  margin-left: 200px;
+}
+.main .nav-section .link-section {
+  background: linear-gradient(to bottom right, #dcf519 0%, #79700f 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 70%;
+  display: inherit;
+}
+.main .nav-section .link-section .link {
+  width: 100px;
+  z-index: 2;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s ease;
+  letter-spacing: -1px;
+}
+.main .nav-section .link-section .link:hover {
+  z-index: 3;
+  transform: scale(1.5);
+  letter-spacing: 2px;
+}
+.main .nav-section .hr-section {
+  width: 50%;
+  margin: 0 auto;
+}
+.main .nav-section .member-section {
+  background: linear-gradient(to top, #dcf519 0%, #79700f 100%);
+  border-radius: 10px;
+  color: black;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.main .text-section {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 200px;
+  height: 70%;
+}
+.main .text-section .text-wrap {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+.main .text-section .text-wrap .logo {
+  width: 250px;
+  height: 250px;
+  background: url("./assets/bg-logo.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .text-section .text-wrap .logo::before {
+  background: url("./assets/logo.png");
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background-size: cover;
+  content: "";
+}
+.main .text-section .text-wrap .logo::after {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, black, rgba(0, 128, 0, 0));
+}
+.main .text-section .text-wrap .text {
+  width: 50%;
+  background: linear-gradient(to bottom left, gold 0%, #3b3606 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
+  letter-spacing: -4px;
+  font-family: "Caudex", serif;
+  padding-left: 40px;
+  margin-top: 50px;
+}
+.main .text-section .text-description {
+  color: white;
+  font-size: 10px;
+  text-align: justify;
+  width: 400px;
+  background: linear-gradient(to bottom right, #FFED8A 0%, #D1B000 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 40px;
+  letter-spacing: -1px;
+}
+.main .text-section .text-button {
+  width: 50%;
+  margin-top: 50px;
+}
+.main .text-section .text-button a {
+  font-family: "Caudex", serif;
+  border: none;
+  outline: none;
+  background: linear-gradient(to bottom right, #FFED8A 0%, #D1B000 100%);
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 2;
+  color: black;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .text-section .text-button a:hover {
+  transform: scale(1.1);
+}
+
+.about {
+  background: black;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.about .text {
+  background: linear-gradient(to bottom right, #dcf519 0%, #79700f 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Caudex", serif;
+  letter-spacing: -2px;
+  margin-left: 30px;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50px);
+}
+.about .text p {
+  font-size: 40px;
+}
+.about .text .t_d {
+  font-size: 14px;
+  letter-spacing: -1px;
+  text-align: center;
+}
+.about .img {
+  background: url("/assets/m2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40%;
+  height: 100%;
+}
+.about .img::before {
+  content: "";
+  width: 40%;
+  height: 70%;
+  position: absolute;
+  background: radial-gradient(rgba(255, 0, 0, 0) 0%, rgb(0, 0, 0) 80%);
+}
+
+.event {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(14, 14, 84), black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  background: red;
+  background: linear-gradient(to top, rgba(0, 0, 255, 0), black);
+}
+.event .text, .event .list {
+  position: relative;
+}
+.event .text {
+  width: 300px;
+  height: 100px;
+  align-self: flex-end;
+  transform: translateY(-110px);
+}
+.event .text p {
+  background: linear-gradient(to bottom right, #dcf519 0%, #79700f 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Caudex", serif;
+  letter-spacing: -2px;
+  font-size: 50px;
+}
+.event .list {
+  width: 80%;
+  margin: 20px;
+  height: 200px;
+  border: 1px solid green;
+}/*# sourceMappingURL=style.css.map */
